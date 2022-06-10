@@ -1,0 +1,21 @@
+<div id="progress-bar" 
+  [attr.aria-valuenow]="step" 
+  [attr.aria-valuemin]="0"
+  [attr.aria-valuemax]="steps" 
+  role="progressbar">
+    <ol id="progress-steps" *ngIf="steps.length > 0">
+      <li *ngFor="let stp of steps; let i = index" class="progress-step" [style.width]="resultado + '%'">
+        <span 
+        #barraProgressoSpan 
+        class="count" 
+        [ngClass]="{'highlight-index': step[i]}">
+       </span>
+      </li>
+    </ol>
+    <div class="step-status">
+      <span 
+      bradParagrafo="pequeno">
+      Passo {{step.length}} de {{steps.length}}
+    </span>
+    </div>
+  </div>
