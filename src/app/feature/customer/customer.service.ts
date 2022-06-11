@@ -29,7 +29,7 @@ export class CustomerService {
           map((res:any) => {
             return res.length > 0 ? null : { cpfExists: false };
           })
-        ).pipe(tap((l) => console.log(l)));
+        )
      };
   }
 

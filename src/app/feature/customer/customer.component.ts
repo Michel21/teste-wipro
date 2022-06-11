@@ -13,7 +13,7 @@ import { CustomerService } from "./customer.service";
 export class CustomerComponent implements OnInit {
 
   currentStep: number[] = [1];
-  totalSteps: number[] = [1, 2, 3, 4, 5, 6];
+  totalSteps: number[] = [1, 2, 3, 4];
 
   itemsCard: Items;
   registerFormGroup: FormGroup;
