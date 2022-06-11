@@ -1,0 +1,47 @@
+@import "../../../assets/scss/global";
+.registartion{
+  padding: 0 24px;
+
+  .progress-bar{
+    width: 60%;
+    padding-top: 38px;
+    margin: 0 auto;
+  }
+  .title{
+    font-size: 22px;
+  }
+  .btn{
+    border: none;
+    height: 34px;
+    width: 172px;
+    background: $primary-blue-color;
+    margin-left: 15px;
+    color: $color-white;
+    &:hover{
+      background-color: $hover;
+    }
+    &:disabled{
+      opacity: 0.3;
+    }
+  }
+  .fields{
+    display: flex;
+    align-items: flex-end;
+
+    .input-content{
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+     
+    }
+  }
+  .subtitle{
+    padding-top: 5px;
+    font-size: 11px;
+    color: #4F575E;
+    padding-bottom: 16px;
+    p{
+      margin: 0;
+    }
+  }
+}

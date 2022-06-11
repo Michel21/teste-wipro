@@ -1,6 +1,6 @@
 <footer class="footer-container">
   <div>
-    <button class="btn-left">Iniciar nova admissão</button>
+    <button class="btn-left" *ngIf="cpfExists">Iniciar nova admissão</button>
     <button class="btn-right">Dicas para abertura da conta</button>
   </div>
 </footer>

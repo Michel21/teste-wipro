@@ -1,0 +1,45 @@
+@import "../../../../assets/scss/global";
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: $nutral-lighter-color;
+  margin-top: 38px;
+  width: calc(270px + 20px);
+ 
+  .card-header{
+    padding: 20px;
+    p{
+      margin: 0;
+      font-size: 11px;
+      font-weight: $weight-light;
+      color: #787878;
+    }
+    h1{
+      font-size: $font-small;
+      font-weight: $weight-bold;
+    }
+  }
+
+  .card-container{
+    padding: 0 20px 20px 20px;
+    .column{
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      .icon{
+        margin-right: 23px;
+      }
+      .content{
+        h2{
+          font-size: $font-small;
+          font-weight: $weight-normal;
+        }
+        p{
+          font-size: 11px;
+          font-weight: $weight-light;
+          color: #787878;
+        }
+      }
+    }
+  }
+}

@@ -1,21 +1,23 @@
 import { NgModule } from "@angular/core";
+import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule, Routes } from "@angular/router";
 import { SharedModule } from "src/app/shared/shared.module";
-import { RegistrationStatusComponent } from "./registration-status.component";
+import { CustomerComponent } from "./customer.component";
+
 
 const ROUTES: Routes = [
-  { path: '', component: RegistrationStatusComponent },
-  { path: 'card/:id', component: RegistrationStatusComponent },
+  { path: '', component: CustomerComponent },
 ]
 
 @NgModule({
-  declarations: [RegistrationStatusComponent],
+  declarations: [CustomerComponent],
   imports:[
     SharedModule,
+    ReactiveFormsModule,
     RouterModule.forChild(ROUTES),
   ],
   exports: []
 })
 
-export class RegistrationStatusModule {}
+export class CustomerModule {}
 

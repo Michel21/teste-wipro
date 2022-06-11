@@ -4,7 +4,7 @@ import { NotFoundComponent } from './shared/components/not-found/not-found.compo
 
 const ROUTES: Routes = [
   {
-    path: 'registration-status', loadChildren: () => import('./feature/registration-status/registration-status.module').then(m => m.RegistrationStatusModule),
+    path: 'registration', loadChildren: () => import('./feature/customer/customer.module').then(m => m.CustomerModule),
   },
   {
     path: 'document-scanning', loadChildren: () => import('./feature/document-scanning/document-scanning.module').then(m => m.DocumentScanningModule),
@@ -13,7 +13,7 @@ const ROUTES: Routes = [
   {
    path: "",
    pathMatch: "full", 
-   redirectTo: "registration-status"
+   redirectTo: "registration"
   },
   { path: '**', component: NotFoundComponent }
 ];

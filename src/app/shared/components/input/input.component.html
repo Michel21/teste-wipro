@@ -1,0 +1,8 @@
+<div class="input-container" [class.has-success]="hasSuccess()" [class.has-error]="hasError()">
+  <label class="control-label" for="inputSuccess">{{ label }}</label>
+
+  <ng-content></ng-content>
+
+  <span class="sucesso" *ngIf="showTip && hasSuccess()"></span>
+  <span class="error" *ngIf="showTip && hasError() && !input.errors[customError]">{{ errorMessage }}</span>
+</div>

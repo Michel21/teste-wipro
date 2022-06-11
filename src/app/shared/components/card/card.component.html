@@ -1,0 +1,26 @@
+<div class="card" *ngIf="data">
+  <div class="card-header">
+    <h1>{{data.title}}</h1>
+    <p>{{data.subTitle}}</p>
+  </div>
+  <div class="card-container">
+      <div class="column">
+        <div class="icon">
+          <img [src]="data.icon_user" alt="usuario">
+        </div>
+        <div class="content">
+          <p>{{data.label}}</p>
+          <h2>{{data.name}}</h2>
+        </div>
+      </div>
+      <div class="column">
+        <div class="icon">
+          <img [src]="data.icon_situacao" alt="selecionado">
+        </div>
+        <div class="content">
+          <p>{{data.situacao_name}}</p>
+          <h2>{{data.situacao}}</h2>
+        </div>
+      </div>
+  </div>
+</div>

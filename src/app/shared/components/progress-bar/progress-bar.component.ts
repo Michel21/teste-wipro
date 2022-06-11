@@ -12,6 +12,7 @@ export class ProgressBarComponent implements AfterViewInit, OnChanges {
 
   stepsCount: any = [];
   resultado: any;
+  stepsName: string[] = ['Início','Documentos','Dados cadastrais','Admissão']
 
   ngAfterViewInit(): void {
       this.getProgresso();

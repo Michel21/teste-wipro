@@ -21,13 +21,13 @@
   margin-bottom: 1.5em;
   color: #4d483f;
   #progress-steps {
-    height: 8px;
+    height: 4px;
     width: 100%;
     margin: 0;
     padding: 0;
     display: block;
     @include rounded-corners(4px);
-    background-color: #EBF0FF;
+    background-color: #C6CED1;
     position: relative;
     list-style-type: none;
     counter-reset: item;
@@ -44,6 +44,7 @@
     width: 16.66%;
     height: 8px;
     float: left;
+    top: -2px;
     margin: 0;
     padding: 0;
     position: relative;
@@ -52,25 +53,27 @@
     content: " "; 
     counter-increment: item;
     display: block;
-    width: 2px;
-    height: 4px;
-    background-color: #2B469C;
+    width: 12px;
+    height: 14px;
+    background-color: #C6CED1;
     @include rounded-corners(50%);
     position: absolute;
     margin-left: 10px;
     right: 7px;
-    top: 2px;
+    top: -4px;
     padding: 2px 0 0 4px;
     font-size: 14px;
     font-weight: bold;
     z-index: 999;
   }
   .highlight-index:before { 
-    background-color: #fff;
+    background-color: #E7EEF1;
     color: #fff;
+    border: 2px solid #165C7D;
+
   }
   .highlight-index {
-    background-color: #3B69FF;
+    background-color: #165C7D;
     display: block;
     height: 100%;
     margin-left: -7px;

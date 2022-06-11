@@ -1,0 +1,43 @@
+@import "../../../../assets/scss/global";
+.input-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  input {
+    font-size: 16px;
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    height: 34px;
+    width: 270px;
+    padding-left: 8px;
+    background-color: $nutral-lighter-color;
+    border: 1px solid #889499;
+    border-radius: 1px;
+  }
+}
+
+.has-success{
+  .form-control{
+    border: 1px solid #889499 !important;
+  }
+}
+.has-error{
+  .form-control{
+    border: 1px solid $error-color !important;
+  }
+}
+
+
+.control-label{
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.error{
+  position: absolute;
+  bottom: -20px;
+  margin-top: 6px;
+  font-size: 14px;
+  color:  $error-color;
+}
+

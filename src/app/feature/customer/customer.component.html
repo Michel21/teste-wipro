@@ -1,0 +1,32 @@
+<section class="registartion">
+  <div class="progress-bar">
+    <app-progress-bar [step]="currentStep" [steps]="totalSteps"></app-progress-bar>
+  </div>
+  <div class="header">
+    <h1 class="title">Informe o CPF do futuro cooperado (a)</h1>
+    <div class="subtitle">
+      <p>Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.</p>
+      <p>Digite apenas os números (sem pontos ou traços).</p>
+    </div>
+  </div>
+  <div class="fields">
+    <div class="input-content" [formGroup]="registerFormGroup">
+      <app-input-container errorMessage="informe um CPF válido" label="CPF" customError="cpfExists" >
+        <input 
+        type="cpf" 
+        class="form-control" 
+        formControlName="cpfCooperado"
+        placeholder="000.000.000-00" 
+        autocomplete="off" />
+      </app-input-container>
+    </div>
+    <button class="btn" 
+     [disabled]="registerFormGroup.invalid" 
+     (click)="veryCpfCooperado()">
+     Consultar por CPF
+   </button>
+  </div>
+  <div>
+    <app-card [data]="itemsCard"></app-card>
+  </div>
+</section>
